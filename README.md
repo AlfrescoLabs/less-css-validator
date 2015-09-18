@@ -3,6 +3,11 @@ Overview
 
 Simple project which uses the lesscss-engine to validate given CSS files.
 
+Building
+-----
+
+mvn clean install
+
 Usage
 -----
 
@@ -10,10 +15,4 @@ Usage
 
 or pipe in arguments:
 
-    find share/src/main/webapp -name '*.css' | xargs java -jar less-css-validator-1.0-SNAPSHOT.jar
-
-
-Building
------
-
-mvn clean install
+    find ~/Share/share/src/main/webapp -name '*.css' | xargs java -jar target/less-css-validator-1.0-SNAPSHOT.jar
